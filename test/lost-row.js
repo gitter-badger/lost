@@ -24,7 +24,7 @@ describe('lost-row', function() {
   it('supports no gutter', function() {
     check(
       'a { lost-row: 2/5 0; }',
-      'a { width: 100%; height: calc(99.999999% * 2/5); margin-bottom: 0; }\n' +
+      'a { width: 100%; height: calc(99.99% * 2/5); margin-bottom: 0; }\n' +
       'a:last-child { margin-bottom: 0; }'
     );
   });

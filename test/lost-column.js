@@ -39,7 +39,7 @@ describe('lost-column', function() {
   it('supports no gutter', function() {
     check(
       'a { lost-column: 2/5 3 0; }',
-      'a { width: calc(99.999999% * 2/5); }\n' +
+      'a { width: calc(99.99% * 2/5); }\n' +
       'a:nth-child(1n) { float: left; margin-right: 0; clear: none; }\n' +
       'a:last-child { margin-right: 0; }\n' +
       'a:nth-child(3n) { margin-right: 0; float: right; }\n' +
